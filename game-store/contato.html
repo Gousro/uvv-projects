@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="imgs/main-icon.png">
+<title>Game Store - Contato</title>
+<link rel="stylesheet" href="css/style.css" />
+<script language="javascript" src="javascript/script.js"></script>
+</head>
+
+<body>
+<!-- Inicio do site -->
+<div id="corpo">
+
+<!-- Banner do site configurado em CSS -->
+<header id="banner"></header>
+
+<!-- Menu do site -->
+<nav class="menu-principal">
+
+<h2>Menu Principal</h2>
+	<ul>
+		<li><a href="index.html">Pagina Inicial</a></li>
+		<li><a href="registrar.html">Registrar</a></li>
+		<li><a href="contato.html">Contato</a></li>
+		<p class="titulo-do-site">Game Store</p><br>
+	</ul>
+	<!-- Janela de Login do site -->
+	<details class="posicao-do-login">
+			<summary>LOGIN </summary><br>
+				<div class="login">
+				<form action="javascript:alert('Painel do usuário temporariamente desabilitado.');">
+					<table class="login-form">
+						<tr>
+							<td colspan="2"><p class="titulo">Minha conta</p></td>
+						</tr>
+						<tr>
+							<td><label for="id"><b>ID: </b> </label></td>
+							<td><input type="text" name="id" id="id" value="Digite um ID ou Email" onfocus="limparPadrao(this);" onblur="escreverPadrao(this);" required></td>
+						</tr>
+						<tr>
+							<td><label for="senha"><b>Senha: </b></label></td>
+							<td><input type="password" name="senha" id="senha" required></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="submit" name="botao" id="botao" value="Entrar" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="esqueci-senha.html">Esqueci a senha</a></td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="registrar.html">Registrar</a></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</details>
+</nav>
+<!-- Conteudo que mostra a lista de jogos para comprar e a descrição do mesmo. -->
+<article>
+<table border="0" width="1000">
+	<tr>
+		<td>
+			<table border="0" class="jogo-especifico">
+				<tr>
+					<td colspan="3" align="center"><p class="titulo-jogo">Contato</p></td>
+				</tr>
+				<tr>
+					<td><br>
+					<form action="mailto:suporte@gamestore.com" method="post">
+						<table align="center">
+							<tr>
+								<td><label for="nome">Nome: </label></td>
+								<td><input type="text" name="nome" id="nome" required></td>
+							</tr>
+							<tr>
+								<td><label for="">ID: </label></td>
+								<td><input type="text" name="id" id="" required></td>
+							</tr>
+							<tr>
+								<td><label for="email">Email: </label></td>
+								<td><input type="email" name="email" id="email" required></td>
+							</tr>
+							<tr>
+								<td><label for="assunto">Assunto: </label></td>
+								<td><input type="text" name="assunto" id="assunto" required></td>
+							</tr>
+							<tr>
+								<td><label for="mensagem">Mensagem: </label></td>
+								<td><textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><input type="submit" value=" ENVIAR "></td>
+							</tr>
+						</table>
+					</form>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</article>
+
+<footer id="rodape">&copy; Copyright - Rodrigo de Jesus Ribeiro - 2018</footer>
+
+</div>
+</body>
+</html>

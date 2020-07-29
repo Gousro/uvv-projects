@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Jogo Jokenpo (Pedra, Papel e Tesoura).">
+<meta name="keywords" content="Jogo, Jokenpo, Jo-Ken-Po, Jokenpô, Jo-Ken-Pô, Pedra Papel e Tesoura, Pedra, Papel, Tesoura">
+<meta name="author" content="Gousro">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+	* {
+		margin: 10px;
+	}
+	body {
+		font-family: Arial, Tahoma, "Times New Roman", "Trebuchet MS", Verdana, "sans-serif";
+	}
+	.jokenpo {
+		display: table;
+		border: 1px solid black;
+		border-radius: 10px;
+		box-sizing: border-box;
+		box-shadow: 1px 1px 5px black;
+	}
+	.titulo-jogo p {
+		text-align: center;
+		color: gold;
+		background-color: #171717;
+		width: 250px;
+		padding: 5px 0 5px 0;
+		font-weight: bold;
+	}
+	button {
+		width: 60px;
+		height: 90px;
+		border-radius: 5px;
+	}
+	.pedra {
+		background-image: url(imagens/pedra.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin-left: 25px;
+		background-color: brown;
+		border: 1px solid brown;
+		box-shadow: 1px 1px 10px black;
+	}
+	.papel {
+		background-image: url(imagens/papel.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: papayawhip;
+		border: 1px solid papayawhip;
+		box-shadow: 1px 1px 10px black;
+	}
+	.tesoura {
+		background-image: url(imagens/tesoura.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: silver;
+		border: 1px solid silver;
+		box-shadow: 1px 1px 10px black;
+	}
+	@media only screen and (max-width: 600px) {
+		.jokenpo {
+			margin: 0 auto;
+		}
+}
+</style>
+<title>JoKenPo</title>
+<script src="javascript/f-jokenpo.js"></script>
+</head>
+<body>
+<div class="jokenpo">
+ <div class="titulo-jogo">
+ 	<p>Jo Ken Po</p>
+ </div>
+ <div class="opcaojogador" >
+ 		<button value="Pedra" id="Pedra" onClick="javascript:jokenpo('Pedra')" class="pedra"></button>
+ 		<button value="Papel" id="Papel" onClick="javascript:jokenpo('Papel')" class="papel"></button>
+ 		<button value="Tesoura" id="Tesoura" onClick="javascript:jokenpo('Tesoura')" class="tesoura"></button>
+ </div>
+  <div>
+    <p>Jogador escolheu: <span id="escolha-jogador">---</span> </p>
+  </div>
+  <div>
+    <p>Computador escolheu: <span id="escolha-computador">---</span> </p>
+  </div>
+  <div>
+    <p>Resultado: <span id="vencedor">---</span></p>
+  </div>
+  <div>
+    <p>Pontos Jogador: <span id="vitoria-do-jogador">0</span></p>
+    <p>Pontos Computador: <span id="vitoria-do-computador">0</span></p>
+    <p>Empatou: <span id="contagem-empates">---</span></p>
+  </div>
+</div>
+</body>
+</html>

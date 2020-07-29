@@ -1,0 +1,188 @@
+/* CSS Document created by Gousro */
+body {
+	font-family: Arial, Tahoma, "Times New Roman", "Trebuchet MS", Verdana, "sans-serif";
+}
+.site {
+	margin: 0 auto;
+	width: 800px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+header {
+	background-image: url(../imagens/Jo-Ken-Po.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 787px;
+	height: 231px;
+	background-position: center;
+}
+
+
+
+/* Formatação do Menu */
+nav {
+	margin: -20px -5px 0 -5px;
+}
+nav h1 {
+	display: none;
+}
+nav ul {
+	list-style: none;
+	background-color: #252525;
+	padding: 10px;
+}
+nav li {
+	display: inline-block;
+}
+nav a {
+	text-decoration: none;
+	background-color: #696969;
+	padding: 5px;
+	color: white;
+	border: 1px solid black;
+}
+nav a:hover {
+	color: black;
+	background-color: #fff;
+	transition: 0.5s;
+}
+nav .a2 {
+	padding: 5px 39px;
+}
+
+
+/* Formatação do main */
+section {
+	display: inline-flex;
+	margin: 5px 0;
+	width: 788px;
+	height: 400px;
+}
+article p {
+	text-align: justify;
+	padding: 5px;
+}
+
+
+/* Formatação da pagina Jogar */
+.tela-jogar {
+	margin: -10px 0 10px 220px;
+}
+
+
+/* Formatação da pagina Contato */
+.contato {
+	display: table;
+	border: 1px solid black;
+	box-sizing: border-box;
+	width: 500px;
+	margin: 10px 0 10px 150px;
+}
+.contato h1 {
+	text-align: center;
+	margin-top: 0px;
+	padding: 5px;
+	border-bottom: 1px solid black;
+}
+.c-esq {
+	float: left;
+	width: 100px;
+	padding: 5px;
+}
+.c-dir {
+	float: right;
+	width: 375px;
+	padding: 5px;
+}
+textarea {
+	width: 98%;
+}
+.c-botao {
+	margin: 100px 0 10px 118px;
+}
+
+
+
+/* Formatação do Rodapé */
+footer {
+	background-color: #252525;
+	color: #fff;
+	padding: 30px;
+	text-align: center;
+	margin: 0 -5px -5px -5px; 
+}
+footer a {
+    color: gold;
+    padding: 9px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background: #333;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+	.site {
+		width: 345px;
+	}
+	header {
+		width: 335px;
+		height: 231px;
+	}
+	section {
+		width: 335px;
+		height: auto;
+	}
+	nav a {
+		padding: 0;
+	}
+	nav a.a2 {
+		padding: 0;
+	}
+	nav a.m0 {
+		padding: 5px 41px;
+	}
+	nav a.m1 {
+		padding: 5px 74px;
+	}
+	nav a.m2 {
+		padding: 5px 76px;
+	}
+	nav a.m3 {
+		padding: 5px 70px;
+	}
+	nav li {
+		display: block;
+		width: 200px;
+		margin: 15px 0 15px 64px;
+	}
+	.tela-jogar {
+		margin: -10px 0 10px 0px;
+	}
+	.contato {
+		width: 335px;
+		margin: 10px 0 10px -1px;
+	}
+	.contato input[type=text] {
+		width: 170px;
+	}
+	.c-esq {
+		width: 80px;
+	}
+	.c-dir {
+		width: 229px;
+	}
+	.c-botao {
+		position: absolute;
+		margin: 263px 0 10px 99px;
+		width: 100px;
+		height: 25px;
+	}
+	textarea {
+		width: 98%;
+		margin-bottom: 25px;
+	}
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="imgs/main-icon.png">
+<title>Game Store - Registrar</title>
+<link rel="stylesheet" href="css/style.css" />
+<script language="javascript" src="javascript/script.js"></script>
+</head>
+
+<body>
+<!-- Inicio do site -->
+<div id="corpo">
+
+<!-- Banner do site configurado em CSS -->
+<header id="banner"></header>
+
+<!-- Menu do site -->
+<nav class="menu-principal">
+
+<h2>Menu Principal</h2>
+	<ul>
+		<li><a href="index.html">Pagina Inicial</a></li>
+		<li><a href="registrar.html">Registrar</a></li>
+		<li><a href="contato.html">Contato</a></li>
+		<p class="titulo-do-site">Game Store</p><br>
+	</ul>
+	<!-- Janela de Login do site -->
+	<details class="posicao-do-login">
+			<summary>LOGIN </summary><br>
+				<div class="login">
+				<form action="javascript:alert('Painel do usuário temporariamente desabilitado.');">
+					<table class="login-form">
+						<tr>
+							<td colspan="2"><p class="titulo">Minha conta</p></td>
+						</tr>
+						<tr>
+							<td><label for="id"><b>ID: </b> </label></td>
+							<td><input type="text" name="id" id="id" value="Digite um ID ou Email" onfocus="limparPadrao(this);" onblur="escreverPadrao(this);" required></td>
+						</tr>
+						<tr>
+							<td><label for="senha"><b>Senha: </b></label></td>
+							<td><input type="password" name="senha" id="senha" required></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="submit" name="botao" id="botao" value="Entrar" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="esqueci-senha.html">Esqueci a senha</a></td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="registrar.html">Registrar</a></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</details>
+</nav>
+<!-- Conteudo que mostra a lista de jogos para comprar e a descrição do mesmo. -->
+<article>
+
+<div class="fundo-registro">
+		<div class="titulo-jogo">
+			Registrar
+		</div>
+		<div>
+		<form action="javascript:alert('O registro de novos usuários foi temporariamente desabilitado.');" method="post">
+		<div class="coluna-centro">
+			<div>
+				<div class="coluna-t">
+					<div class="coluna-a">
+						<label for="nome">Nome:</label>
+					</div>
+					<div>
+						<input type="text" name="txt_nome" id="nome" required>
+					</div>
+				</div>
+				
+				<div class="coluna-t">
+					<div class="coluna-a">
+						<label for="id_">ID:</label>
+					</div>
+					<div>
+						<input type="text" name="txt_id" id="id_" required>
+					</div>
+				</div>
+				
+				<div class="coluna-t">
+					<div class="coluna-a">
+						<label for="email">Email:</label>
+					</div>
+					<div>
+						<input type="email" name="txt_email" id="email" required>
+					</div>
+				</div>
+				<div class="coluna-t">
+					<div class="coluna-a">
+						<label for="c_email">Confirmar email:</label>
+					</div>
+					<div>
+						<input type="email" name="txt_c_email" id="c_email" required>
+					</div>
+				</div>
+				<div class="botao-registrar-t">
+					<div class="botao-registrar">
+						<input type="submit" value=" REGISTRAR ">
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		</form>
+		</div>
+</div>
+
+</article>
+
+<footer id="rodape">&copy; Copyright - Rodrigo de Jesus Ribeiro - 2018</footer>
+
+</div>
+</body>
+</html>

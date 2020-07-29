@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Jogo Jokenpo (Pedra, Papel e Tesoura).">
+<meta name="keywords" content="Jogo, Jokenpo, Jo-Ken-Po, Jokenpô, Jo-Ken-Pô, Pedra Papel e Tesoura, Pedra, Papel, Tesoura">
+<meta name="author" content="Gousro">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<script src="javascript/f-jokenpo.js"></script>
+<title>Jo Ken Po</title>
+</head>
+
+<body>
+<div class="site">
+  <header class="bisnm"></header>
+  <nav>
+    <h1>Menu Horizontal</h1>
+    <ul>
+      <li><a href="javascript:abrir('home');" class="m0">Página Principal</a></li>
+      <li><a href="javascript:abrir('regras');" class="a2 m1">Regras</a></li>
+      <li><a href="javascript:abrir('jogar');" class="a2 m2">Jogar&nbsp;</a></li>
+      <li><a href="javascript:abrir('contato');" class="a2 m3">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <article id="conteudo">
+        <h1>Pedra, Papel e Tesoura</h1>
+        <p>Também chamado no Brasil de jokempô (do japonês じゃんけんぽん, jankenpon) é um jogo de mãos recreativo e simples para duas ou mais pessoas, que não requer equipamentos nem habilidade.</p>
+        <p>O jogo é frequentemente empregado como método de seleção (como na escolha de equipes para a prática desportiva, por exemplo), assim como lançar moedas, jogar dados, entre outros. No entanto, diferentemente desses métodos que se baseiam exclusivamente em sorte, pedra-papel-tesoura pode ser jogado com um pouco de habilidade. Principalmente se o jogo se estender por vários turnos com o mesmo jogador, este pode reconhecer e explorar a lógica do comportamento do adversário (perceber e anteceder as jogadas do adversário).</p>
+      </article>
+      <article id="home" style="display:none;">
+        <h1>Pedra, Papel e Tesoura</h1>
+        <p>Também chamado no Brasil de jokempô (do japonês じゃんけんぽん, jankenpon) é um jogo de mãos recreativo e simples para duas ou mais pessoas, que não requer equipamentos nem habilidade.</p>
+        <p>O jogo é frequentemente empregado como método de seleção (como na escolha de equipes para a prática desportiva, por exemplo), assim como lançar moedas, jogar dados, entre outros. No entanto, diferentemente desses métodos que se baseiam exclusivamente em sorte, pedra-papel-tesoura pode ser jogado com um pouco de habilidade. Principalmente se o jogo se estender por vários turnos com o mesmo jogador, este pode reconhecer e explorar a lógica do comportamento do adversário (perceber e anteceder as jogadas do adversário).</p>
+      </article>
+      <article id="regras" style="display:none;">
+        <h1>Regras</h1>
+        <p>No Janken-pon, os jogadores devem simultaneamente esticar a mão, na qual cada um formou um símbolo (que significa pedra, papel ou tesoura). Então, os jogadores comparam os símbolos para decidir quem ganhou, da seguinte forma:</p>
+        <ul>
+          <li>Pedra ganha da tesoura (amassando-a ou quebrando-a).</li>
+          <li>Tesoura ganha do papel (cortando-o).</li>
+          <li>Papel ganha da pedra (embrulhando-a).</li>
+        </ul>
+        <p>A pedra é simbolizada por um punho fechado; a tesoura, por dois dedos esticados; e o papel, pela mão aberta. Caso dois jogadores façam o mesmo gesto, ocorre um empate, e geralmente se joga de novo até desempatar.</p>
+      </article>
+      <article id="jogar" style="display:none;">
+        <div class="tela-jogar">
+        <iframe src="jokenpo.html" frameborder="0" width="330px" height="390px"></iframe>
+        </div>
+      </article>
+      <article id="contato" style="display:none;">
+        <form action="javascript:alert('Estamos offline, tente depois.');">
+          <div class="contato">
+            <h1>Contato</h1>
+            <div class="c-esq">
+              <label for="nome">Nome:</label>
+            </div>
+            <div class="c-dir">
+              <input type="text" name="txt_nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+            <div class="c-esq">
+              <label for="email">Email:</label>
+            </div>
+            <div class="c-dir">
+              <input type="text" name="txt_email" id="email" placeholder="Digite um email valido" required>
+            </div>
+            <div class="c-esq">
+              <label for="assunto">Assunto:</label>
+            </div>
+            <div class="c-dir">
+              <input type="text" name="txt_assunto" id="assunto" placeholder="Qual é o assunto? Ex.: Bug" required>
+            </div>
+            <div class="c-esq">
+              <label for="mensagem">Mensagem:</label>
+            </div>
+            <div class="c-dir">
+              <textarea name="txt_mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+            <div class="c-botao">
+              <input type="submit" value="Enviar">
+            </div>
+          </div>
+        </form>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Copyright - Rodrigo de Jesus Ribeiro - 2018</p>
+    <p><img src="imagens/github.png" alt="">GitHub: <a href="https://github.com/Gousro" target="_blank">Gousro</a></p>
+  </footer>
+</div>
+</body>
+</html>
+<script src="javascript/f-menu.js"></script>

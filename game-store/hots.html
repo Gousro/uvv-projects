@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="imgs/hots-icon.png">
+<title>Heroes of the Storm</title>
+<link rel="stylesheet" href="css/style.css" />
+<script language="javascript" src="javascript/script.js"></script>
+</head>
+
+<body>
+<!-- Inicio do site -->
+<div id="corpo">
+
+<!-- Banner do site configurado em CSS -->
+<header id="banner"></header>
+
+<!-- Menu do site -->
+<nav class="menu-principal">
+
+<h2>Menu Principal</h2>
+	<ul>
+		<li><a href="index.html">Pagina Inicial</a></li>
+		<li><a href="registrar.html">Registrar</a></li>
+		<li><a href="contato.html">Contato</a></li>
+		<p class="titulo-do-site">Game Store</p><br>
+	</ul>
+	<!-- Janela de Login do site -->
+	<details class="posicao-do-login">
+			<summary>LOGIN </summary><br>
+				<div class="login">
+				<form action="javascript:alert('Painel do usuário temporariamente desabilitado.');">
+					<table class="login-form">
+						<tr>
+							<td colspan="2"><p class="titulo">Minha conta</p></td>
+						</tr>
+						<tr>
+							<td><label for="id"><b>ID: </b> </label></td>
+							<td><input type="text" name="id" id="id" value="Digite um ID ou Email" onfocus="limparPadrao(this);" onblur="escreverPadrao(this);" required></td>
+						</tr>
+						<tr>
+							<td><label for="senha"><b>Senha: </b></label></td>
+							<td><input type="password" name="senha" id="senha" required></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td><input type="submit" name="botao" id="botao" value="Entrar" /></td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="esqueci-senha.html">Esqueci a senha</a></td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="registrar.html">Registrar</a></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</details>
+</nav>
+<!-- Conteudo que mostra a lista de jogos para comprar e a descrição do mesmo. -->
+<article>
+<table border="0" width="1000">
+	<tr>
+		<td>
+			<table border="0" class="jogo-especifico">
+				<tr>
+					<td colspan="3" align="center"><p class="titulo-jogo"><img src="imgs/logo_hots.png" alt="Imagem com o nome Heroes of the Storm"></p></td>
+				</tr>
+				<tr>
+					<td width="178"><img src="imgs/box_hots.png" style="; margin-top: -300px;" alt="Caixa do jogo Heroes of the Storm" /></td>
+					<td width="300">
+						<table style="margin-top: -150px;">
+							<tr>
+								<td colspan="2" align="center"><b>Imagens</b></td>
+							</tr>
+							<tr>
+								<td><a href="imgs/screenshots/hots/01.jpg" target="_blank"><img src="imgs/screenshots/hots/01.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 01."></a></td>
+								<td><a href="imgs/screenshots/hots/02.jpg" target="_blank"><img src="imgs/screenshots/hots/02.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 02."></a></td>
+							</tr>
+							<tr>
+								<td><a href="imgs/screenshots/hots/03.jpg" target="_blank"><img src="imgs/screenshots/hots/03.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 03."></a></td>
+								<td><a href="imgs/screenshots/hots/04.jpg" target="_blank"><img src="imgs/screenshots/hots/04.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 04."></a></td>
+							</tr>
+							<tr>
+								<td><a href="imgs/screenshots/hots/05.jpg" target="_blank"><img src="imgs/screenshots/hots/05.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 05."></a></td>
+								<td><a href="imgs/screenshots/hots/06.jpg" target="_blank"><img src="imgs/screenshots/hots/06.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 06."></a></td>
+							</tr>
+							<tr>
+								<td><a href="imgs/screenshots/hots/07.jpeg" target="_blank"><img src="imgs/screenshots/hots/07.jpeg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 07."></a></td>
+								<td><a href="imgs/screenshots/hots/08.jpg" target="_blank"><img src="imgs/screenshots/hots/08.jpg" class="size_scheenshots" alt="Imagem do jogo Heroes of the Storm, imagem 08."></a></td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<form action="#" method="post">
+							<table cellspacing="5" cellpadding="5" style="border: 1px solid #000; margin: 10px 10px 10px 10px;">
+								<tr>
+									<td colspan="2" style="text-align: center; color: #fff; background-color: #222;">Dados para a compra</td>
+								</tr>
+								<tr>
+									<td><label for="nome">Nome completo: </label></td>
+									<td><input type="text" name="nome" id="nome" required /></td>
+								</tr>
+								<tr>
+									<td><label for="email">Email: </label></td>
+									<td><input type="email" name="email" id="email" required /></td>
+								</tr>
+								<tr>
+									<td><label for="endereco">Endereço: </label></td>
+									<td><input type="text" name="endereco" id="endereco" required /></td>
+								</tr>
+								<tr>
+									<td><label for="num_casa">Nº: </label></td>
+									<td><input type="text" name="num_casa" id="num_casa" required /></td>
+								</tr>
+								<tr>
+									<td><label for="estado">Estado: </label></td>
+									<td><input type="text" name="estado" id="estado" required /></td>
+								</tr>
+								<tr>
+									<td><label for="cidade">Cidade: </label></td>
+									<td><input type="text" name="cidade" id="cidade" required /></td>
+								</tr>
+								<tr>
+									<td><label for="telefone_r">Telefone residencial: </label></td>
+									<td><input type="tel" name="telefone_r" id="telefone_r" required /></td>
+								</tr>
+								<tr>
+									<td><label for="telefone_c">Telefone celular: </label></td>
+									<td><input type="tel" name="telefone_c" id="telefone_c" /></td>
+								</tr>
+								<tr>
+									<td><label for="rg">RG: </label></td>
+									<td><input type="text" name="rg" id="rg" required /></td>
+								</tr>
+								<tr>
+									<td><label for="cpf">CPF: </label></td>
+									<td><input type="text" name="cpf" id="cpf" required /></td>
+								</tr>
+								<tr>
+									<td><label for="num_cartao">Número do cartão: </label></td>
+									<td><input type="text" name="num_cartao" id="num_cartao" required /></td>
+								</tr>
+								<tr>
+									<td><label for="frete">Frete: </label></td>
+									<td><input type="radio" name="frete" id="frete" checked /> GRÁTIS</td>
+								</tr>
+								<tr>
+									<td align="center" colspan="2"><img src="imgs/gold.png" alt="Imagem de um conjunto de moedas de ouro."> R$ 86,90</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="submit" class="botao_comprar" value=" COMPRAR "></td>
+								</tr>
+							</table>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+<details>
+<summary>Requesitos: </summary>
+<table border="1">
+	<tr>
+		<td>Vazio</td>
+		<td>REQUISITOS MÍNIMOS</td>
+		<td>ESPECIFICAÇÕES RECOMENDADAS</td>
+	</tr>
+	<tr>
+		<td>SISTEMA OPERACIONAL</td>
+		<td colspan="2">Windows® 7 64-bit</td>
+	</tr>
+	<tr>
+		<td>PROCESSADOR</td>
+		<td>Intel® Core™ i5-760 ou<br>
+			AMD FX™-8100 ou superior</td>
+		<td>Intel® Core™ i7-4770 ou<br>
+			AMD FX™-8310 ou superior</td>
+	</tr>
+	<tr>
+		<td>PLACA DE VÍDEO</td>
+		<td>NVIDIA® GeForce® GTX 560 2GB ou<br>
+			AMD™ Radeon™ HD 7850 2GB ou<br>
+			Intel® HD Graphics 530 (45W)</td>
+		<td>NVIDIA® GeForce® GTX 960 ou<br>
+			AMD™ Radeon™ R9 280 ou superior</td>
+	</tr>
+	<tr>
+		<td>MEMÓRIA</td>
+		<td>4 GB de RAM</td>
+		<td>8 GB de RAM</td>
+	</tr>
+	<tr>
+		<td>ARMAZENAMENTO</td>
+		<td>70 GB de espaço livre em HD de 7200 RPM</td>
+		<td>70GB de espaço livre em SSD</td>
+	</tr>
+	<tr>
+		<td>INTERNET</td>
+		<td colspan="2">Conexão de internet banda larga</td>
+	</tr>
+	<tr>
+		<td>DISPOSITIVOS DE MÍDIA</td>
+		<td colspan="2">Drive de DVD-ROM</td>
+	</tr>
+	<tr>
+		<td>DISPOSITIVOS DE INTERFACE</td>
+		<td>Teclado e mouse são obrigatórios. Outros dispositivos não são compatíveis.</td>
+		<td>Mouse com pelo menos dois botões e botão de rolagem</td>
+	</tr>
+	<tr>
+		<td>RESOLUÇÃO</td>
+		<td colspan="2">Monitor com resolução mínima de 1024 x 768</td>
+	</tr>
+</table>
+<b>Nota:</b> Heroes of the Storm requer um sistema operacional de 64 bits.
+</details>
+</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</article>
+
+<footer id="rodape">&copy; Copyright - Rodrigo de Jesus Ribeiro - 2018</footer>
+
+</div>
+</body>
+</html>

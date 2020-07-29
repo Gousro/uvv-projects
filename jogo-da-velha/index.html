@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Jogo da Velha, PvP (jogador contra jogador).">
+<meta name="keywords" content="Jogo, Velha, Jogo da Velha">
+<meta name="author" content="Gousro">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Velha</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="javascript/jogodavelha.js"></script>
+</head>
+<body>
+	<div class="jogo">
+	<div class="banner"></div>
+		<h1>Jogo da Velha</h1>
+		<table align="center">
+			<tr>
+				<td class="celula celulaA1" id="A1" onclick="jogar(this.id); check();"></td>
+				<td class="celula celulaA2" id="A2" onclick="jogar(this.id); check();"></td>
+				<td class="celula celulaA3" id="A3" onclick="jogar(this.id); check();"></td>
+			</tr>
+			<tr>
+				<td class="celula celulaB1" id="B1" onclick="jogar(this.id); check();"></td>
+				<td class="celula celulaB2" id="B2" onclick="jogar(this.id); check();"></td>
+				<td class="celula celulaB3" id="B3" onclick="jogar(this.id); check();"></td>
+			</tr>
+			<tr>
+				<td class="celula celulaC1" id="C1" onclick="jogar(this.id); check();"></td>
+				<td class="celula celulaC2" id="C2" onclick="jogar(this.id); check();"></td>
+				<td class="celula" id="C3" onclick="jogar(this.id); check();"></td>
+			</tr> 
+		</table>
+		<br>
+		<table align="center" border="0">
+			<tr>
+				<td colspan="2">Resultado: </td>
+			</tr>
+			<tr>
+				<td colspan="2" id="resultado">-</td>
+			</tr>
+			<tr>
+				<td class="titulo-dos-pontos">Pontos do Jogador X</td>
+				<td class="titulo-dos-pontos">Pontos do Jogador O</td>
+			</tr>
+			<tr>
+				<td id="vitoria-do-jogador-x">0</td>
+				<td id="vitoria-do-jogador-o">0</td>
+			</tr>
+			<tr>
+				<td colspan="2"><button onClick="window.location.reload();">Resetar Pontos</button> | <button onClick="refresh();">Deu Velha!</button></td>
+			</tr>
+		</table>
+	</div>
+	<footer>
+		<p>&copy; Copyright - Rodrigo de Jesus Ribeiro - 2018</p>
+		<p><img src="img/github.png" alt="">GitHub: <a href="https://github.com/Gousro" target="_blank">Gousro</a></p>
+	</footer>
+</body>
+</html>

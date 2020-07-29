@@ -1,0 +1,108 @@
+/* 
+	CSS Document 
+	Created by Gousro
+*/
+body {
+	font-family: Arial, Tahoma, "Times New Roman", "Trebuchet MS", Verdana, "sans-serif";
+}
+.banner {
+	width: 359px;
+	height: 378px;
+	margin: 0 auto;
+	background-color: #F2F6F9;
+	background-image: url(../img/jogo-da-velha.jpg);
+	background-repeat: no-repeat;
+}
+.jogo{
+	margin: 0;
+	padding: 0;
+}
+table {
+	width: 400px;
+	font-size: 16px;
+}
+.celula {
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	text-align: center;
+	font-size: 80px;
+	box-sizing: border-box;
+}
+.celulaA1 {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.celulaA2 {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.celulaA3 {
+	border-bottom: 2px solid black;
+}
+.celulaB1 {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.celulaB2 {
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+}
+.celulaB3 {
+	border-bottom: 2px solid black;
+}
+.celulaC1 {
+	border-right: 2px solid black;
+}
+.celulaC2 {
+	border-right: 2px solid black;
+}
+td {
+	text-align: center;
+}
+.vitoria-do-jogador {
+	background: #fff;
+	text-align: center;
+	font-size: 14px;
+}
+.titulo-dos-pontos {
+	font-size: 14px;
+}
+h1 {
+	text-align: center;
+}
+.X {
+	color: #0074FF;
+}
+.O {
+	color: red;
+}
+/* Formatação do Rodapé */
+footer {
+	background-color: #252525;
+	width: 100vw;
+	color: #fff;
+	padding: 30px;
+	text-align: center;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+footer a {
+    color: gold;
+    padding: 9px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    background: #333;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+	table {
+		width: 340px;
+	}
+	footer {
+		width: 340px;
+	}
+}

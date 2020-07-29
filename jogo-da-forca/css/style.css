@@ -1,0 +1,19 @@
+/* 
+	CSS Document 
+	Created by Gousro
+*/
+
+/* Formatação do link no Rodapé */
+footer a {
+	background-color: #373C42;
+	color: #FFD700;
+	padding: 9px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+footer a:hover {
+	text-decoration: underline;
+	background: #333;
+	border-radius: 5px;
+	color: #FFD700;
+}
