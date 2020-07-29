@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img title="Inspire Liberdade" src=".github/logo.jpg" width="640px" />
+    <img title="Inspire Liberdade" src=".github/logo.png" width="640px" />
 </h1>
 
 <p align="center">
